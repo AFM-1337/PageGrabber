@@ -1,6 +1,4 @@
 
-
-```markdown
 # 🕸️ PageGrabber
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/AFM-1337/PageGrabber)
@@ -22,9 +20,48 @@
 - 📁 **JSON Output** – Save results for further processing or reporting
 - 🎨 **Colorful Terminal UI** – Clear, readable output
 
-## 📸 Screenshot
+## 📸 Demo
 
-![PageGrabber Screenshot](Picsart_26-03-22_22-21-11-701.jpg)
+```
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           P A G E G R A B B E R                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  CREATOR : MD ARAFAT HOSSEN                                                  ║
+║  TEAM   : L > AFM_1337_                                                      ║
+║  VERSION : 1.0                                                               ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  GITHUB : AFM-1337 | TOOL : PageGrabber                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+[Π] EXTRACT PAGES FROM URL           [Π] CRAWL ENTIRE WEBSITE
+[Π] EXIT
+[Π] SELECT OPTION > 1
+
+[Π] ENTER URL: https://www.jgkcollege.co.in/
+[Π] FETCHING: https://www.jgkcollege.co.in/
+[Π] OUTPUT FILE NAME (default: links.json):
+
+[Π] ✅ Found 73 links
+[Π] 🐘 PHP files: 20
+
+[Π] 📋 PHP LINKS:
+[Π] 1. https://www.jgkcollege.co.in/index.php
+[Π] 2. https://www.jgkcollege.co.in/page.php?id=3
+[Π] 3. https://www.jgkcollege.co.in/page.php?id=2
+[Π] 4. https://www.jgkcollege.co.in/page.php?id=7
+[Π] 5. https://www.jgkcollege.co.in/page.php?id=8
+[Π] 6. https://www.jgkcollege.co.in/page.php?id=4
+[Π] 7. https://www.jgkcollege.co.in/page.php?id=5
+[Π] 8. https://www.jgkcollege.co.in/page.php?id=6
+[Π] 9. https://www.jgkcollege.co.in/downloads.php
+[Π] 10. https://www.jgkcollege.co.in/gallery.php
+[Π] 11. https://www.jgkcollege.co.in/contact-us.php
+[Π] 12. https://www.jgkcollege.co.in/announcement.php
+
+[Π] Results saved to: links.json
+
+```
 
 ## 🔧 Installation
 
@@ -86,13 +123,24 @@ Results are saved in JSON format:
   "total_links": 342,
   "php_links": [
     "https://target.com/index.php",
-    "https://target.com/login.php"
+    "https://target.com/login.php",
+    "https://target.com/page.php?id=3"
   ],
-  "js_links": [...],
-  "css_links": [...],
-  "image_links": [...],
-  "internal_links": [...],
-  "external_links": [...]
+  "js_links": [
+    "https://target.com/script.js"
+  ],
+  "css_links": [
+    "https://target.com/style.css"
+  ],
+  "image_links": [
+    "https://target.com/logo.png"
+  ],
+  "internal_links": [
+    "https://target.com/about.html"
+  ],
+  "external_links": [
+    "https://facebook.com/target"
+  ]
 }
 ```
 
@@ -124,7 +172,7 @@ PageGrabber/
 ├── pagegrabber.py          # Main script
 ├── README.md               # This file
 ├── LICENSE                 # MIT License
-└── Picsart_26-03-22_22-21-11-701.jpg  # Screenshot
+└── Picsart_26-03-22_22-21-11-701.jpg  # Screenshot (optional)
 ```
 
 ⚠️ Important Notes
@@ -154,11 +202,10 @@ Happy Hunting! 🎯
 
 ```
 
-This README provides:
-1. **Clear purpose** – Explains what the tool does and its legitimate use
-2. **Installation & usage** – Step-by-step instructions with examples
-3. **Feature highlights** – Showcases the key capabilities
-4. **Legal disclaimer** – Important for security tools
-5. **Visual structure** – Uses badges, emojis, and formatting for readability
+This README uses:
+- **Code blocks** instead of images for the demo (these ALWAYS work on GitHub)
+- **Box drawing characters** to create a terminal-like display
+- **ASCII art** for the banner that will render perfectly
+- No external images that might fail to load
 
-You can add your actual screenshot filename if it differs from the one in the repository. Let me know if you'd like any adjustments!
+The demo section shows exactly what your tool looks like when running, and it will display correctly on any device without relying on image hosting.
